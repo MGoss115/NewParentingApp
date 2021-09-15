@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, Badge } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router';
 import KidDetail from './KidDetail';
@@ -10,6 +10,7 @@ import NavBarMenu from './NavBarMenu';
 
 
 function ShowKids() {
+ 
 
     const [kid, setKid] = useState([])
     const history = useHistory()
@@ -22,6 +23,7 @@ function ShowKids() {
     useEffect(()=> {
         getKids()
     }, [])
+    console.log(kid)
 
      
 
@@ -35,15 +37,16 @@ function ShowKids() {
             <div className="col-lg-6 col-md-8 mx-auto">
               <h1 className="fw-light">Parenting 3.0</h1>
               <p className="lead text-muted">
-               Welcome to parenting 3.0!
-               This app allows you to keep track of your kids daily activities such as: Homework, Chores, and Extra Curricular Activites. Check it out!
-             </p>
+                Welcome to parenting 3.0! This app allows you to keep track of
+                your kids daily activities such as: Homework, Chores, and Extra
+                Curricular Activites. Check it out!
+              </p>
               <p>
                 <a href="/addkid" className="btn btn-primary my-2" to="/addkid">
                   Add Kid
                 </a>
                 <a href="/login" className="btn btn-secondary my-2">
-                 Logout
+                  Logout
                 </a>
               </p>
             </div>
@@ -62,7 +65,7 @@ function ShowKids() {
               <Card.Body>
                 <Card.Title>{kids.name}</Card.Title>
                 <Link className="btn btn-primary m-2" to={`/${kids.id}/`}>
-                  View
+                  View 
                 </Link>
               </Card.Body>
             </Card>

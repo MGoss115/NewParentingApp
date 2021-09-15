@@ -11,8 +11,8 @@ function NavBarMenu() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <NavLink className="nav" to="/">
-                  Kids
+                <NavLink className="nav" to="/register">
+                  Register
                 </NavLink>
                 <NavLink className="nav" to="/addkid">
                   Add Kid

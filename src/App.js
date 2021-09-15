@@ -15,7 +15,7 @@ import { Container } from 'react-bootstrap';
 
 
 
-function App() {
+function App( {detail }) {
  
   // const [user, setUser] = useState(null)
   
@@ -56,7 +56,7 @@ function App() {
             <Route exact path="/login" component={LoginPage} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/addkid" component={AddKid} />
-            <Route exact path="/" component={ShowKids} />
+            <Route exact path="/" component={ShowKids} detail={detail}/>
             <Route exact path="/:id/" component={KidDetail} />
             <Route exact path="/:id/update" component={KidNameUpdate} />
           </Switch>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import { useHistory, useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import { Form, Button, Row, Col } from 'react-bootstrap';
 
@@ -50,10 +50,15 @@ function KidNameUpdate( { detail }) {
   };
 
   return (
-    <div>
+    <div className="py-5 text-center container">
       <Form>
         <Row className="mb-3">
-          <Form.Group as={Col} md="4" controlId="validationCustom01">
+          <Form.Group
+            as={Col}
+            md="4"
+            className="text-center container"
+            controlId="validationCustom01"
+          >
             <Form.Label>Name</Form.Label>
             <Form.Control
               type="text"
@@ -63,12 +68,16 @@ function KidNameUpdate( { detail }) {
               placeholder="Update Name"
               onChange={(e) => setName(e.target.value)}
             />
-            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
         </Row>
         <img src={image} height="300" width="250" />
         <Row className="mb-3">
-          <Form.Group as={Col} md="4" controlId="validationCustom01">
+          <Form.Group
+            as={Col}
+            md="4"
+            controlId="validationCustom01"
+            className="text-center container"
+          >
             <Form.Label>Update Image</Form.Label>
             <Form.Control
               className="form-control form-control-lg"
@@ -76,11 +85,15 @@ function KidNameUpdate( { detail }) {
               name="image"
               onChange={(e) => setImage(e.target.files[0])}
             />
-            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
         </Row>
         <Row className="mb-3">
-          <Form.Group as={Col} md="4" controlId="validationCustom01">
+          <Form.Group
+            as={Col}
+            md="4"
+            controlId="validationCustom01"
+            className="text-center container"
+          >
             <Form.Label>Chores</Form.Label>
             <Form.Control
               type="text"
@@ -90,26 +103,34 @@ function KidNameUpdate( { detail }) {
               placeholder="Update Chores"
               onChange={(e) => setChores(e.target.value)}
             />
-            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
         </Row>
         <Row className="mb-3">
-          <Form.Group as={Col} md="4" controlId="validationCustom01">
+          <Form.Group
+            as={Col}
+            md="4"
+            controlId="validationCustom01"
+            className="text-center container"
+          >
             <Form.Label>Homework</Form.Label>
             <Form.Control
               type="text"
               id="name"
               name="name"
               value={homework}
-              placeholder="Update Chores"
+              placeholder="Update Homework"
               onChange={(e) => setHomework(e.target.value)}
             />
-            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
         </Row>
         <Row className="mb-3">
-          <Form.Group as={Col} md="4" controlId="validationCustom01">
-            <Form.Label>After School Activities</Form.Label>
+          <Form.Group
+            as={Col}
+            md="4"
+            controlId="validationCustom01"
+            className="text-center container"
+          >
+            <Form.Label>After School Activities:</Form.Label>
             <Form.Control
               type="text"
               id="name"
@@ -118,10 +139,12 @@ function KidNameUpdate( { detail }) {
               placeholder="Update Activities"
               onChange={(e) => setRecreational(e.target.value)}
             />
-            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
         </Row>
         <Button onClick={UpdateKid}>Submit form</Button>
+        <Link className="btn btn-primary m-2" to={`/${id}`}>
+          Go Back
+        </Link>
       </Form>
 
       <div className="form-group">

@@ -61,6 +61,9 @@ function KidUpdate() {
       >
         Delete
       </Link>
+      <Link className="btn btn-primary m-2" to={`/`}>
+        Go Back
+      </Link>
     </div>
   );
 }

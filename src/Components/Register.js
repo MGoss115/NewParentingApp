@@ -1,6 +1,7 @@
 import React, { useState }from 'react';
 import { Form, Button, Col, Row } from 'react-bootstrap';
 import { Redirect } from 'react-router';
+import { Link } from 'react-router-dom';
 
 function Register() {
     const [username, setUsername] = useState('')
@@ -27,36 +28,41 @@ function Register() {
     }
     
   return (
-    <div>
-      <Form onSubmit={submit}>
-        <h1 className="h3 mb-3 fw-normal">Please Register</h1>
+    <div style={{ textAlign: 'right' }}>
+      <Link className="btn btn-primary m-2" to={`/login`}>
+        Login
+      </Link>
+      <div className="py-5 text-center container">
+        <Form onSubmit={submit}>
+          <h1 className="h3 mb-3 fw-normal">Please Register</h1>
 
-        <input
-          className="form-control text-muted"
-          controlId="formBasicPassword"
-          placeholder="Username"
-          type="text"
-          name="username"
-          id="username"
-          value={username}
-          required
-          onChange={(e) => setUsername(e.target.value)}
-        />
+          <input
+            className="form-control text-muted"
+            controlId="formBasicPassword"
+            placeholder="Username"
+            type="text"
+            name="username"
+            id="username"
+            value={username}
+            required
+            onChange={(e) => setUsername(e.target.value)}
+          />
 
-        <input
-          className="form-control"
-          placeholder="Password"
-          type="password"
-          name="password"
-          id="password"
-          value={password}
-          required
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button className="w-100 btn btn-lg btn-primary" type="submit">
-          Submit
-        </button>
-      </Form>
+          <input
+            className="form-control"
+            placeholder="Password"
+            type="password"
+            name="password"
+            id="password"
+            value={password}
+            required
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button className="w-100 btn btn-lg btn-primary" type="submit">
+            Submit
+          </button>
+        </Form>
+      </div>
     </div>
   );
 }
