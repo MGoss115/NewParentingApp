@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import axios from 'axios';
+import { Form, Button, Row, Col } from 'react-bootstrap';
 
 function KidNameUpdate( { detail }) {
   const [name, setName] = useState('');
@@ -50,10 +51,82 @@ function KidNameUpdate( { detail }) {
 
   return (
     <div>
-      <h1>Update Here</h1>
+      <Form>
+        <Row className="mb-3">
+          <Form.Group as={Col} md="4" controlId="validationCustom01">
+            <Form.Label>Name</Form.Label>
+            <Form.Control
+              type="text"
+              id="name"
+              name="name"
+              value={name}
+              placeholder="Update Name"
+              onChange={(e) => setName(e.target.value)}
+            />
+            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+          </Form.Group>
+        </Row>
+        <img src={image} height="300" width="250" />
+        <Row className="mb-3">
+          <Form.Group as={Col} md="4" controlId="validationCustom01">
+            <Form.Label>Update Image</Form.Label>
+            <Form.Control
+              className="form-control form-control-lg"
+              type="file"
+              name="image"
+              onChange={(e) => setImage(e.target.files[0])}
+            />
+            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+          </Form.Group>
+        </Row>
+        <Row className="mb-3">
+          <Form.Group as={Col} md="4" controlId="validationCustom01">
+            <Form.Label>Chores</Form.Label>
+            <Form.Control
+              type="text"
+              id="name"
+              name="name"
+              value={chores}
+              placeholder="Update Chores"
+              onChange={(e) => setChores(e.target.value)}
+            />
+            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+          </Form.Group>
+        </Row>
+        <Row className="mb-3">
+          <Form.Group as={Col} md="4" controlId="validationCustom01">
+            <Form.Label>Homework</Form.Label>
+            <Form.Control
+              type="text"
+              id="name"
+              name="name"
+              value={homework}
+              placeholder="Update Chores"
+              onChange={(e) => setHomework(e.target.value)}
+            />
+            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+          </Form.Group>
+        </Row>
+        <Row className="mb-3">
+          <Form.Group as={Col} md="4" controlId="validationCustom01">
+            <Form.Label>After School Activities</Form.Label>
+            <Form.Control
+              type="text"
+              id="name"
+              name="name"
+              value={recreational}
+              placeholder="Update Activities"
+              onChange={(e) => setRecreational(e.target.value)}
+            />
+            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+          </Form.Group>
+        </Row>
+        <Button onClick={UpdateKid}>Submit form</Button>
+      </Form>
+
       <div className="form-group">
         <div className="form-group">
-          <input
+          {/* <input
             className="count-pill"
             type="text"
             id="name"
@@ -72,8 +145,8 @@ function KidNameUpdate( { detail }) {
               name="image"
               onChange={(e) => setImage(e.target.files[0])}
             />
-          </div>
-          <div className="form-group">
+          </div> */}
+          {/* <div className="form-group">
             <input
               className="count-pill"
               type="text"
@@ -94,8 +167,8 @@ function KidNameUpdate( { detail }) {
               placeholder="Update Homework"
               onChange={(e) => setHomework(e.target.value)}
             />
-          </div>
-          <div className="form-group">
+          </div> */}
+          {/* <div className="form-group">
             <input
               className="count-pill"
               type="text"
@@ -108,7 +181,7 @@ function KidNameUpdate( { detail }) {
           </div>
           <button className="btn btn-success" onClick={UpdateKid}>
             Update
-          </button>
+          </button> */}
           {/* <Link
             className="btn btn-danger m-2"
             oncClick={() => deleteKid(kids.id)}
