@@ -1,0 +1,30 @@
+
+
+
+
+.show-kids-nav{
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 22px;
+  font-weight: 600;
+  color: crimson;
+}
+
+.nav{
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  font-size: 22px;
+  font-weight: 600;
+  color: crimson;
+ 
+}
+
+.kid-card-info{
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin: 5px;
+  padding: 2px;
+  padding-top: 100px;
+}
+
