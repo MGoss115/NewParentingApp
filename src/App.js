@@ -15,36 +15,26 @@ import { Container } from 'react-bootstrap';
 
 
 
-function App( {detail }) {
+function App() {
+
+  const [user, setUser] = useState('')
+
+//     const getUser = async (token) => {
+     
+
+//       await fetch('http://localhost:8000/current_user/', {
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify(token)
+//       }).then((response) => {
+//           console.log(response)
+//       )}
+    
+// }   
+   
  
-  // const [user, setUser] = useState(null)
-  
- 
-  
-  // const handleLogin = async (e) => {
-  //   e.preventDefault()
-  //   let userObj = {
-  //     username: e.target.username.value,
-  //     password: e.target.password.value
-  //   }
-  //   let response = await UserAPI.login(userObj)
-  //   console.log(response)
-  //   let data = await response.json()
-  //   localStorage.setItem("token", data["token"])
-  //   setUser(data["user"])
-  
-  
-  // }
-  
-  
-  // const renderLoginPage = () => {
-  //   return (
-  //     <LoginPage
-  //     handleLogin={handleLogin}
-  //     />
-  //   )
-  // }  
-  // console.log(user)
+
  
   return (
     <div>
@@ -56,7 +46,7 @@ function App( {detail }) {
             <Route exact path="/login" component={LoginPage} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/addkid" component={AddKid} />
-            <Route exact path="/" component={ShowKids} detail={detail}/>
+            <Route exact path="/" component={ShowKids} />
             <Route exact path="/:id/" component={KidDetail} />
             <Route exact path="/:id/update" component={KidNameUpdate} />
           </Switch>
