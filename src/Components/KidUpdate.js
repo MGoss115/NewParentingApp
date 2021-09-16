@@ -54,7 +54,7 @@ function KidUpdate() {
       <Link
         style={{
           fontFamily: 'serif',
-          backgroundColor: 'linen',
+          backgroundColor: 'snow',
           color: 'gray',
           borderColor: 'peachpuff',
         }}
@@ -66,7 +66,7 @@ function KidUpdate() {
       <Link
         style={{
           fontFamily: 'serif',
-          backgroundColor: 'linen',
+          backgroundColor: 'snow',
           color: 'gray',
           borderColor: 'peachpuff',
         }}
@@ -79,7 +79,7 @@ function KidUpdate() {
       <Link
         style={{
           fontFamily: 'serif',
-          backgroundColor: 'linen',
+          backgroundColor: 'snow',
           color: 'gray',
           borderColor: 'peachpuff',
         }}

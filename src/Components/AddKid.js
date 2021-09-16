@@ -56,7 +56,7 @@ function AddKid( { task }) {
             <button
               style={{
                 fontFamily: 'serif',
-                backgroundColor: 'linen',
+                backgroundColor: 'snow',
                 color: 'gray',
                 borderColor: 'peachpuff',
               }}
@@ -68,7 +68,7 @@ function AddKid( { task }) {
             <Link
               style={{
                 fontFamily: 'serif',
-                backgroundColor: 'linen',
+                backgroundColor: 'snow',
                 color: 'gray',
                 borderColor: 'peachpuff',
               }}

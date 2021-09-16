@@ -147,7 +147,7 @@ function KidNameUpdate( { detail }) {
         <Button
           style={{
             fontFamily: 'serif',
-            backgroundColor: 'linen',
+            backgroundColor: 'snow',
             color: 'gray',
             borderColor: 'peachpuff',
           }}
@@ -158,7 +158,7 @@ function KidNameUpdate( { detail }) {
         <Link
           style={{
             fontFamily: 'serif',
-            backgroundColor: 'linen',
+            backgroundColor: 'snow',
             color: 'gray',
             borderColor: 'peachpuff',
           }}

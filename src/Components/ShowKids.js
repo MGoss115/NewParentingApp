@@ -72,7 +72,12 @@ function ShowKids() {
                   {kids.name}
                 </Card.Title>
                 <Link
-                  style={{ fontFamily: 'serif', backgroundColor:'linen', color:'gray', borderColor:'peachpuff' }}
+                  style={{
+                    fontFamily: 'serif',
+                    backgroundColor: 'linen',
+                    color: 'gray',
+                    borderColor: 'peachpuff',
+                  }}
                   className="btn btn-primary m-2"
                   to={`/${kids.id}/`}
                 >
