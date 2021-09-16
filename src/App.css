@@ -26,7 +26,13 @@ body{
   flex-direction: row;
   flex-flow: wrap;
   margin: 5px;
-  padding: 2px;
+  padding: 5px;
   padding-top: 100px;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.info{
+  background-color: cadetblue;
 }
 

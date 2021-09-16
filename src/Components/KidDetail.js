@@ -21,11 +21,10 @@ function KidDetail() {
   }, []);
 
   return (
-    <div>
+    <div style={{ fontFamily: 'serif' }}>
       <h3>{todos.name}</h3>
       <img src={todos.image} style={{ width: '22rem' }} alt="" />
       <KidUpdate key={todos.id} todos={todos} />
-     
     </div>
   );
 }

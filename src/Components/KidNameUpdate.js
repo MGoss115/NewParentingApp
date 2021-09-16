@@ -50,7 +50,10 @@ function KidNameUpdate( { detail }) {
   };
 
   return (
-    <div className="py-5 text-center container">
+    <div
+      style={{ fontFamily: 'serif', backgroundColor: 'lightgray' }}
+      className="py-5 text-center container"
+    >
       <Form>
         <Row className="mb-3">
           <Form.Group
@@ -141,8 +144,27 @@ function KidNameUpdate( { detail }) {
             />
           </Form.Group>
         </Row>
-        <Button onClick={UpdateKid}>Submit form</Button>
-        <Link className="btn btn-primary m-2" to={`/${id}`}>
+        <Button
+          style={{
+            fontFamily: 'serif',
+            backgroundColor: 'linen',
+            color: 'gray',
+            borderColor: 'peachpuff',
+          }}
+          onClick={UpdateKid}
+        >
+          Submit form
+        </Button>
+        <Link
+          style={{
+            fontFamily: 'serif',
+            backgroundColor: 'linen',
+            color: 'gray',
+            borderColor: 'peachpuff',
+          }}
+          className="btn btn-primary m-2"
+          to={`/${id}`}
+        >
           Go Back
         </Link>
       </Form>

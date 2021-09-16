@@ -32,7 +32,7 @@ function ShowKids() {
       <div>
         {/* <NavBarMenu /> */}
 
-        <section className="py-5 text-center container">
+        <section className="py-5 text-center container info">
           <div className="row py-lg-">
             <div className="col-lg-6 col-md-8 mx-auto">
               <h1 className="fw-light">Parenting 3.0</h1>
@@ -42,19 +42,24 @@ function ShowKids() {
                 Curricular Activites. Check it out!
               </p>
               <p>
-                <a href="/addkid" className="btn btn-primary my-2" to="/addkid">
+                <a
+                  style={{ marginRight: '10px' }}
+                  href="/addkid"
+                  className="btn btn-secondary my-2"
+                  to="/addkid"
+                >
                   Add Kid
                 </a>
-                <a href="/login" className="btn btn-secondary my-2">
+                <a href="/login" className="btn btn-secondary">
                   Logout
                 </a>
               </p>
             </div>
           </div>
         </section>
-        <section className="kid-card-info py-5 text-center container">
+        <section className="kid-card-info py-5 text-center container ">
           {kid.map((kids, index) => (
-            <Card style={{ width: '18rem', borderRadius: '30px' }}>
+            <Card style={{ width: '18rem' }}>
               {kids.image ? (
                 <Card.Img
                   variant="top"
@@ -63,9 +68,15 @@ function ShowKids() {
                 />
               ) : null}
               <Card.Body>
-                <Card.Title>{kids.name}</Card.Title>
-                <Link className="btn btn-primary m-2" to={`/${kids.id}/`}>
-                  View 
+                <Card.Title style={{ fontFamily: 'serif' }}>
+                  {kids.name}
+                </Card.Title>
+                <Link
+                  style={{ fontFamily: 'serif', backgroundColor:'linen', color:'gray', borderColor:'peachpuff' }}
+                  className="btn btn-primary m-2"
+                  to={`/${kids.id}/`}
+                >
+                  View
                 </Link>
               </Card.Body>
             </Card>

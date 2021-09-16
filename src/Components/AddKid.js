@@ -28,7 +28,7 @@ function AddKid( { task }) {
         });
     }
     return (
-      <div className="container">
+      <div style={{ fontFamily: 'serif', backgroundColor: 'lightgray' }} className="container">
         <h1>Add Kid</h1>
         <div className="form-group py-5 text-center container">
           <div className="form-group py-5 text-center container">
@@ -53,10 +53,28 @@ function AddKid( { task }) {
               />
             </div>
             <div className="text-center container"></div>
-            <button className="btn btn-success" onClick={addKid}>
+            <button
+              style={{
+                fontFamily: 'serif',
+                backgroundColor: 'linen',
+                color: 'gray',
+                borderColor: 'peachpuff',
+              }}
+              className="btn btn-success"
+              onClick={addKid}
+            >
               Add Kid
             </button>
-            <Link className="btn btn-primary m-2" to={`/`}>
+            <Link
+              style={{
+                fontFamily: 'serif',
+                backgroundColor: 'linen',
+                color: 'gray',
+                borderColor: 'peachpuff',
+              }}
+              className="btn btn-primary m-2"
+              to={`/`}
+            >
               Go Back
             </Link>
           </div>

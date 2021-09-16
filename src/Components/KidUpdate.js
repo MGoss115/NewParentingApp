@@ -33,7 +33,7 @@ function KidUpdate() {
       <h4>Chores: {detail.chores}</h4>
       <h4>Homework: {detail.homework}</h4>
       <h4>After School Activities: {detail.recreational} </h4> */}
-      <Table striped bordered hover>
+      <Table striped bordered hover style={{ fontFamily: 'serif' }}>
         <thead>
           <tr>
             <th>{detail.name}'s</th>
@@ -51,17 +51,41 @@ function KidUpdate() {
           </tr>
         </tbody>
       </Table>
-      <Link className="btn btn-primary m-2" to={`/${id}/update`}>
+      <Link
+        style={{
+          fontFamily: 'serif',
+          backgroundColor: 'linen',
+          color: 'gray',
+          borderColor: 'peachpuff',
+        }}
+        className="btn btn-primary m-2"
+        to={`/${id}/update`}
+      >
         Update
       </Link>
       <Link
+        style={{
+          fontFamily: 'serif',
+          backgroundColor: 'linen',
+          color: 'gray',
+          borderColor: 'peachpuff',
+        }}
         className="btn btn-danger m-2"
         onClick={() => deleteKid(detail.id)}
         to={`/`}
       >
         Delete
       </Link>
-      <Link className="btn btn-primary m-2" to={`/`}>
+      <Link
+        style={{
+          fontFamily: 'serif',
+          backgroundColor: 'linen',
+          color: 'gray',
+          borderColor: 'peachpuff',
+        }}
+        className="btn btn-primary m-2"
+        to={`/`}
+      >
         Go Back
       </Link>
     </div>
