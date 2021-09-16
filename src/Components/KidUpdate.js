@@ -12,7 +12,7 @@ function KidUpdate() {
     const history = useHistory()
 
     const getDetails = async () => {
-        const res = await  axios.get(`http://localhost:8000/kids/${id}`)
+        const res = await axios.get(`http://localhost:8000/kids/${id}`);
         console.log(res.data)
         setDetail(res.data)
   }
@@ -24,7 +24,7 @@ function KidUpdate() {
 
   const deleteKid = async (id) => {
     await axios.delete(`http://localhost:8000/kids/${id}`);
-    // history.push("/")
+    history.push("/")
   }
 
   return (

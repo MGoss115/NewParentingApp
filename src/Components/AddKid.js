@@ -21,11 +21,11 @@ function AddKid( { task }) {
         await axios({
           method: 'post',
           url: 'http://localhost:8000/kids/',
-          data: formField
+          data: formField,
         }).then((response) => {
-            console.log(response.data)
-            history.push('/')
-        })
+          console.log(response.data);
+          history.push('/');
+        });
     }
     return (
       <div className="container">
