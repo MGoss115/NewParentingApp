@@ -70,7 +70,7 @@ function ShowKids() {
                 />
               ) : null}
               <Card.Body>
-                <Card.Title style={{ fontFamily: 'serif', marginLeft:'30px' }}>
+                <Card.Title style={{ fontFamily: 'serif'}}>
                   {kids.name}
                 </Card.Title>
                 <Link
@@ -79,6 +79,7 @@ function ShowKids() {
                     backgroundColor: 'linen',
                     color: 'gray',
                     borderColor: 'peachpuff',
+                    marginLeft:'30px'
                   }}
                   className="btn btn-primary m-2"
                   to={`/${kids.id}/`}
