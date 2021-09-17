@@ -20,7 +20,7 @@ function AddKid( { task }) {
         }
         await axios({
           method: 'post',
-          url: 'http://localhost:8000/kids/',
+          url: 'https://parenting-v3.herokuapp.com/kids/',
           data: formField,
         }).then((response) => {
           console.log(response.data);

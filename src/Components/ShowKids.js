@@ -16,7 +16,9 @@ function ShowKids() {
     const history = useHistory()
 
     const getKids = async () => {
-        const response = await axios.get('http://localhost:8000/kids/');
+        const response = await axios.get(
+          'https://parenting-v3.herokuapp.com/kids/'
+        );
         console.log(response.data)
         setKid(response.data)
     }

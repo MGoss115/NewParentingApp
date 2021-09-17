@@ -11,7 +11,7 @@ function Register() {
     const submit = async (e) => {
         e.preventDefault()
 
-        await fetch('http://localhost:8000/users/', {
+        await fetch('https://parenting-v3.herokuapp.com/users/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

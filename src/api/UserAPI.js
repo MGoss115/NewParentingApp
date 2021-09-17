@@ -1,6 +1,6 @@
 
 const login = (userObj) => {
-return fetch('http://localhost:8000/token-auth/', {
+return fetch('https://parenting-v3.herokuapp.com/token-auth/', {
   headers: {
     'Content-Type': 'application/json',
   },

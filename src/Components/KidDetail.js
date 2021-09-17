@@ -10,7 +10,9 @@ function KidDetail() {
   const { id } = useParams()
 
   const getTodos = async () => {
-    const { data } = await axios.get(`http://localhost:8000/kids/${id}`);
+    const { data } = await axios.get(
+      `https://parenting-v3.herokuapp.com/kids/${id}`
+    );
     console.log(data);
     setTodos(data);
   };

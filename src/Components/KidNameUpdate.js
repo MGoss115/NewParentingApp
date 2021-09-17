@@ -15,7 +15,9 @@ function KidNameUpdate( { detail }) {
 
 
   const kidDetails = async () => {
-    const { data } = await axios.get(`http://localhost:8000/kids/${id}`);
+    const { data } = await axios.get(
+      `https://parenting-v3.herokuapp.com/kids/${id}`
+    );
     console.log(data)
     setName(data.name);
     setImage(data.image);
@@ -41,7 +43,7 @@ function KidNameUpdate( { detail }) {
     }
     await axios({
       method: 'PUT',
-      url: `http://localhost:8000/kids/${id}`,
+      url: `https://parenting-v3.herokuapp.com/kids/${id}`,
       data: formField,
     }).then((res) => {
       console.log(res.data);
