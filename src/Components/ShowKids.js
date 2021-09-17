@@ -70,7 +70,7 @@ function ShowKids() {
                 />
               ) : null}
               <Card.Body>
-                <Card.Title style={{ fontFamily: 'serif' }}>
+                <Card.Title style={{ fontFamily: 'serif', marginLeft:'30px' }}>
                   {kids.name}
                 </Card.Title>
                 <Link
