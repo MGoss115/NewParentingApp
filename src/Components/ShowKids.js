@@ -79,7 +79,6 @@ function ShowKids() {
                     backgroundColor: 'linen',
                     color: 'gray',
                     borderColor: 'peachpuff',
-                    marginLeft:'30px'
                   }}
                   className="btn btn-primary m-2"
                   to={`/${kids.id}/`}
