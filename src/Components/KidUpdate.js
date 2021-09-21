@@ -31,10 +31,7 @@ function KidUpdate() {
 
   return (
     <div>
-      {/* <h1>{detail.name}'s Task</h1>
-      <h4>Chores: {detail.chores}</h4>
-      <h4>Homework: {detail.homework}</h4>
-      <h4>After School Activities: {detail.recreational} </h4> */}
+     
       <Table striped bordered hover style={{ fontFamily: 'serif' }}>
         <thead>
           <tr>

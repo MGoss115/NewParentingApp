@@ -32,7 +32,6 @@ function ShowKids() {
    
     return (
       <div>
-        {/* <NavBarMenu /> */}
 
         <section className="py-5 text-center container info">
           <div className="row py-lg-">
